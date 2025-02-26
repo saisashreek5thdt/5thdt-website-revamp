@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass sass/main.scss css/style.css -w",
+    "watch:sass1": "sass sass/mainDark.scss css/dark.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "sass sass/main.scss css/style.min.css --style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "compile:sass1": "sass sass/mainDark.scss css/dark.comp.css",
+    "prefix:css1": "postcss --use autoprefixer -b 'last 10 versions' css/dark.comp.css -o css/dark.prefix.css",
+    "compress:css1": "sass sass/mainDark.scss css/dark.min.css --style compressed",
+    "watch:sass2": "sass sass/mainLight.scss css/light.css -w",
+    "compile:sass2": "sass sass/mainLight.scss css/light.comp.css",
+    "prefix:css2": "postcss --use autoprefixer -b 'last 10 versions' css/light.comp.css -o css/light.prefix.css",
+    "compress:css2": "sass sass/mainLight.scss css/light.min.css --style compressed",
+    "build:css": "npm-run-all compile:sass1 prefix:css1 compress:css1 compile:sass2 prefix:css2 compress:css2"
   },
   "keywords": [],
   "author": "5TH Dimension Technologies",
