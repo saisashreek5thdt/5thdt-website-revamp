@@ -22,11 +22,11 @@
     <!-- <link type="text/css" rel="stylesheet" href="css/responsive.css" /> -->
 
     <!-- Dark CSS Start -->
-    <link type="text/css" rel="stylesheet" href="css/dark.min.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/dark.min.css" /> -->
     <!-- Dark CSS End -->
 
     <!-- Light CSS Start -->
-    <link type="text/css" rel="stylesheet" href="css/light.min.css" />
+    <link id="theme-style" type="text/css" rel="stylesheet" href="css/light.min.css" />
     <!-- Light CSS End -->
 
     <!-- Favicon -->
@@ -153,9 +153,13 @@
           </nav>
         </div>
         <!-- Header Button -->
-        <div class="bringer-header-rp">
-          <a href="contacts.html" class="bringer-button">Get a FREE Quote</a>
-        </div>
+        <!-- <div class="bringer-header-rp" id="theme-toggle">
+          <a href="index.html" class="bringer-button">Get a FREE Quote</a>
+        </div> -->
+        <!-- <div class="bringer-header-rp" id="theme-toggle">
+          <div class="bringer-button">Theme Toggle</div>
+        </div> -->
+        <button id="theme-toggle">Switch Theme</button>
       </div>
       <!-- Mobile Header -->
       <div class="bringer-mobile-header-inner">
@@ -1027,5 +1031,17 @@
     <script src="js/classes.js"></script>
     <script src="js/main.js"></script> -->
     <script src="js/5thdt.min.js"></script>
+    <script>
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeStyle = document.getElementById("theme-style");
+
+      themeToggle.addEventListener("click", () => {
+        if (themeStyle.getAttribute("href") === "css/light.min.css") {
+          themeStyle.setAttribute("href", "css/dark.min.css");
+        } else {
+          themeStyle.setAttribute("href", "css/light.min.css");
+        }
+      });
+    </script>
   </body>
 </html>

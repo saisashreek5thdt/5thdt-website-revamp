@@ -8,10 +8,10 @@
 =============== */
 :root {
     /* Used as body background and overlays */
-    --bringer-s-body-bg: #07090D;
+    --bringer-s-body-bg: #F5F7FA;
 
     /* Used as a background color for header, footer, and mobile navigation */
-    --bringer-s-nav: #07090DCC;
+    --bringer-s-nav: #F5F7FACC;
 
     /* Used as a background color for block containers, sub-menus, and form inputs */
     --bringer-s-container-bg: #1A1D24;
@@ -20,10 +20,10 @@
     --bringer-s-container-frosted: #1A1D24EE;
 
     /* Used as a color for headings, page titles, button labels, and other bright text accents */
-    --bringer-s-heading: #F5F7FA;
+    --bringer-s-heading: #07090D;
 
     /* It is the same as the previous one but with transparency. Used for labels, meta, and some hover effects */
-    --bringer-s-heading-fade: #F5F7FAC0;
+    --bringer-s-heading-fade: #07090D;
 
     /* Used as a color for general content */
     --bringer-s-text: #C5C7CE;
