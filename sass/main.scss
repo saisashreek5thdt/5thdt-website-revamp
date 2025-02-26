@@ -1,5 +1,5 @@
 //Dark SCSS Import
-@import url(_dark.scss);
+@use "dark";
 
 //Light SCSS Import
-@import url(_light.scss);
+@use "light";
