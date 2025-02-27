@@ -246,7 +246,7 @@ header#bringer-header,
     02. TYPOGRAPHY
     ============== */
 .bringer-highlight {
-    color: var(--bringer-s-heading);
+    color: var(--bringer-s-body-bg);
 }
 strong {
     font-weight: var(--bringer-t-heading-fw);
@@ -568,7 +568,7 @@ h6 {
     margin-bottom: calc(0.5 * var(--stg-xs-gap));
 }
 .bringer-meta.bringer-highlight {
-    color: var(--bringer-s-heading);
+    color: var(--bringer-s-body-bg);
 }
 .bringer-meta > a,
 .bringer-meta > span {
