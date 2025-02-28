@@ -2397,6 +2397,7 @@ a.bringer-arrow-link {
 .bringer-portfolio-card {
     padding: var(--stg-small-gap);
     border-radius: var(--bringer-default-br);
+    height:400px;
 }
 .bringer-portfolio-card-image {
     transition: transform 0.3s;
@@ -2413,7 +2414,7 @@ a.bringer-arrow-link {
     border-radius: unset;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height:100%;
 }
 .bringer-portfolio-card-footer {
     display: flex;
@@ -2421,6 +2422,7 @@ a.bringer-arrow-link {
     justify-content: space-between;
     align-items: center;
     padding: var(--stg-small-gap) 0 9px 0;
+    margin-top: -60px;
 }
 .bringer-portfolio-card-title {
     min-height: 24px;
