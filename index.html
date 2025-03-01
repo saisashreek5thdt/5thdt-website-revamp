@@ -8,10 +8,14 @@
     <title>5TH Dimension Technologies</title>
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap"
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600&amp;display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> -->
+
     <!-- Config -->
     <!-- <link type="text/css" rel="stylesheet" href="css/config.css" /> -->
     <!-- Libraries -->
@@ -22,11 +26,16 @@
     <!-- <link type="text/css" rel="stylesheet" href="css/responsive.css" /> -->
 
     <!-- Dark CSS Start -->
-    <link type="text/css" rel="stylesheet" href="css/dark.min.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/dark.min.css" /> -->
     <!-- Dark CSS End -->
 
     <!-- Light CSS Start -->
-    <link type="text/css" rel="stylesheet" href="css/light.min.css" />
+    <link
+      id="theme-style"
+      type="text/css"
+      rel="stylesheet"
+      href="css/light.min.css"
+    />
     <!-- Light CSS End -->
 
     <!-- Favicon -->
@@ -57,105 +66,45 @@
               data-stagger-delay="75"
             >
               <li class="current-menu-parent">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Domainology</a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="index.html">Home 01</a>
+                    <a href="#">Education</a>
                   </li>
                   <li>
-                    <a href="home02.html">Home 02</a>
+                    <a href="#">Arts</a>
                   </li>
                   <li>
-                    <a href="home03.html">Home 03</a>
+                    <a href="uiux.html">UI/UX</a>
                   </li>
                   <li>
-                    <a href="home04.html">Home 04</a>
+                    <a href="#">Apps</a>
                   </li>
                   <li>
-                    <a href="home05.html">Home 05</a>
-                  </li>
-                  <li class="current-menu-item">
-                    <a href="home06.html">Home 06</a>
-                  </li>
-                  <li>
-                    <a href="home07.html">Home 07</a>
-                  </li>
-                  <li>
-                    <a href="home08.html">Home 08</a>
+                    <a href="#">Animation</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">About Us</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="about-us.html">About Us</a>
-                  </li>
-                  <li>
-                    <a href="about-me.html">About Me</a>
-                  </li>
-                  <li>
-                    <a href="team-member.html">Team Member</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="services.html">Our Services</a>
-                  </li>
-                  <li>
-                    <a href="service-details.html">Service Details</a>
-                  </li>
-                  <li>
-                    <a href="pricing.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="faq.html">F.A.Q.</a>
-                  </li>
-                  <li>
-                    <a href="testimonials.html">Testimonials</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="portfolio-infinite-list.html">Infinite List</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-slider.html">Slider</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-column.html">Column Cards</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-grid.html">Classic Grid</a>
-                  </li>
-                  <li class="bringer-menu-divider"></li>
-                  <li>
-                    <a href="portfolio-post01.html">Portfolio Details 01</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-post02.html">Portfolio Details 02</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-post03.html">Portfolio Details 03</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="contacts.html">Contacts</a>
+                <a href="#footer">Say Hello</a>
               </li>
             </ul>
           </nav>
         </div>
         <!-- Header Button -->
-        <div class="bringer-header-rp">
-          <a href="contacts.html" class="bringer-button">Get a FREE Quote</a>
-        </div>
+        <!-- <div class="bringer-header-rp" id="theme-toggle">
+          <a href="index.html" class="bringer-button">Get a FREE Quote</a>
+        </div> -->
+        <!-- <div class="bringer-header-rp" id="theme-toggle">
+          <div class="bringer-button">Theme Toggle</div>
+        </div> -->
+        <button id="theme-toggle">Switch Theme</button>
       </div>
       <!-- Mobile Header -->
       <div class="bringer-mobile-header-inner">
@@ -186,14 +135,14 @@
               >
                 <div
                   class="bringer-bento-hero-media bringer-masked-media"
-                  data-bg-src="img/home/home06-background.jpg"
+                  data-bg-src="img/home/tcn2.gif"
                 >
                   <!-- Title -->
-                  <h1 class="bringer-page-title">The Creative Nerds</h1>
+                  <h1 class="bringer-page-title"></h1>
                   <!-- Description -->
                   <p class="bringer-highlight">
-                    We help creative agencies, designers, and other creative
-                    people showcase their work and connect with clients.
+                    Not great minds at work, but the best work by creative
+                    minds. We engage with brands and people.
                   </p>
                 </div>
                 <div class="bringer-masked-content at-bottom-right">
@@ -805,6 +754,133 @@
           </div>
         </section>
 
+        <section>
+          <!-- Section Title -->
+          <div class="stg-row bringer-section-title">
+              <div class="stg-col-8 stg-offset-2">
+                  <div class="align-center">
+                      <h2 data-appear="fade-up" data-unload="fade-up">Recent Works</h2>
+                      <p class="bringer-large-text is-short" data-appear="fade-up" data-unload="fade-up" data-delay="100">Completed Projects</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Portfolio Carousel -->
+          <div class="swiper bringer-carousel stg-bottom-gap-l" data-appear="fade-up" data-unload="fade-up" data-delay="200" data-tp-centered="0">
+              <div class="swiper-wrapper">
+                  <!-- Card Item 01 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/minique1.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Branding</span> -->
+                              <h6>MinimumQue</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post01.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                                          
+                  <!-- Card Item 02 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/srimatrey-logo.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Advertising</span> -->
+                              <h6>Srimatrey</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post02.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                                          
+                  <!-- Card Item 03 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/recyite-logo.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Marketing</span> -->
+                              <h6>Recyite</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post03.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                                          
+                  <!-- Card Item 04 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/diet-tree.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Advertising</span> -->
+                              <h6>Kalpavriksh</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post04.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                                          
+                  <!-- Card Item 05 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/logicon.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Marketing</span> -->
+                              <h6> Logicon</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post05.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                                          
+                  <!-- Card Item 06 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/blustone.logo.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Branding</span> -->
+                              <h6>BlueStone</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post06.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+                  
+                  <!-- Card Item 07 -->
+                  <div class="bringer-block bringer-portfolio-card swiper-slide">
+                      <div class="bringer-portfolio-card-image">
+                          <img class="bringer-lazy" src="img/null.png" data-src="img/portfolio/sing-logo.png" alt="" width="1200" height="1200">
+                      </div>
+                      <div class="bringer-portfolio-card-footer">
+                          <div class="bringer-portfolio-card-title">
+                              <!-- <span class="bringer-meta">Branding</span> -->
+                              <h6>Singhania</h6>
+                          </div>
+                          <span class="bringer-icon bringer-icon-explore"></span>
+                      </div>
+                      <a href="portfolio-post07.html"></a>
+                  </div><!-- .bringer-portfolio-card -->
+              </div>
+              <!-- Pagination -->
+              <div class="swiper-pagination bringer-dots"></div>
+          </div><!-- .bringer-portfolio-carousel -->
+          <div class="align-center" data-appear="fade-up" data-unload="zoom-out" data-delay="300">
+              <a href="portfolio-slider.html" class="bringer-button">See All</a>
+          </div>
+      </section>
+
+
         <!-- Section: CTA Form -->
         <section data-padding="bottom">
           <div
@@ -864,7 +940,7 @@
       <!-- Footer -->
       <footer id="bringer-footer" data-appear="fade-up" data-unload="fade-down">
         <!-- Footer Widgets Area -->
-        <div class="bringer-footer-widgets">
+        <div class="bringer-footer-widgets" id="footer">
           <div class="stg-container">
             <div
               class="stg-row"
@@ -895,16 +971,16 @@
                   >
                     <li>
                       <a
-                        href="#"
+                        href="https://www.youtube.com/@theBlueBees"
                         target="_blank"
-                        class="bringer-socials-facebook"
+                        class="bringer-socials-youtube"
                       >
                         <i></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="https://www.instagram.com/5thdt/"
                         target="_blank"
                         class="bringer-socials-instagram"
                       >
@@ -912,24 +988,19 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" class="bringer-socials-x">
-                        <i></i>
-                      </a>
-                    </li>
-                    <li>
                       <a
-                        href="#"
+                        href="https://x.com/5thdt"
                         target="_blank"
-                        class="bringer-socials-tiktok"
+                        class="bringer-socials-x"
                       >
                         <i></i>
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="https://www.linkedin.com/company/fifthdt"
                         target="_blank"
-                        class="bringer-socials-patreon"
+                        class="bringer-socials-linkedin"
                       >
                         <i></i>
                       </a>
@@ -939,15 +1010,15 @@
               </div>
               <div class="stg-col-2 stg-offset-1 stg-tp-col-4 stg-m-col-4">
                 <div class="bringer-widget">
-                  <h6>Services</h6>
+                  <h6>Domainology</h6>
                   <div class="bringer-menu-widget">
                     <ul>
-                      <li><a href="service-details.html">Branding</a></li>
-                      <li><a href="service-details.html">Marketing</a></li>
-                      <li><a href="service-details.html">Graphic Design</a></li>
-                      <li><a href="service-details.html">Web Design</a></li>
+                      <li><a href="#">Education</a></li>
+                      <li><a href="#">Arts</a></li>
+                      <li><a href="#">UI/UX</a></li>
+                      <li><a href="#">Apps</a></li>
                       <li>
-                        <a href="service-details.html">Content Creation</a>
+                        <a href="#">Animation</a>
                       </li>
                     </ul>
                   </div>
@@ -956,29 +1027,14 @@
               </div>
               <div class="stg-col-2 stg-tp-col-4 stg-m-col-4">
                 <div class="bringer-widget">
-                  <h6>About Us</h6>
+                  <h6>Widgets</h6>
                   <div class="bringer-menu-widget">
                     <ul>
-                      <li><a href="about-us.html">About Us</a></li>
-                      <li><a href="about-me.html">About Me</a></li>
-                      <li><a href="team-member.html">Our Team</a></li>
-                      <li><a href="testimonials.html">Testimonials</a></li>
-                      <li><a href="contacts.html">Get in Touch</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- .bringer-widget -->
-              </div>
-              <div class="stg-col-2 stg-tp-col-4 stg-m-col-4">
-                <div class="bringer-widget">
-                  <h6>Resources</h6>
-                  <div class="bringer-menu-widget">
-                    <ul>
-                      <li><a href="pricing.html">Pricing</a></li>
-                      <li><a href="faq.html">Help Center</a></li>
-                      <li><a href="services.html">Our Services</a></li>
-                      <li><a href="#">Terms of Use</a></li>
-                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Domains</a></li>
+                      <li><a href="#">Our Works</a></li>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">Clients</a></li>
                     </ul>
                   </div>
                 </div>
@@ -994,7 +1050,8 @@
         <!-- Footer Copyright Line -->
         <div class="bringer-footer-line stg-container">
           <div class="align-center">
-            Copyright &copy; 2024. All Rights Reserved.
+            Copyright &copy; <span id="currentYear"></span>. All Rights
+            Reserved.
           </div>
         </div>
         <!-- bringer-footer-line -->
@@ -1020,5 +1077,7 @@
     <script src="js/classes.js"></script>
     <script src="js/main.js"></script> -->
     <script src="js/5thdt.min.js"></script>
+    <script src="js/currentYear.js"></script>
+    <script src="js/themeSwitcher.js"></script>
   </body>
 </html>

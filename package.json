@@ -27,5 +27,8 @@
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "uglify-js": "^3.19.3"
+  },
+  "dependencies": {
+    "5thdt__website": "file:"
   }
 }
