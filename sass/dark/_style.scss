@@ -3205,6 +3205,134 @@ a.bringer-arrow-link {
     border: 4px solid var(--bringer-s-heading);
 }
 
+
+// new section
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    padding: 50px;
+    
+    .cta-content {
+        color: white;
+        width: 50%;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .cta-indicator {
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    }
+
+    .cta-images {
+        width: 50%;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+//Technology
+
+.backlight-bottom {
+    background-color: #000 !important; // Black background
+    padding: 60px 0;
+  
+    .bringer-section-title {
+      text-align: left;
+      h2 {
+        color: #ffffff !important;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 36px;
+        font-weight: bold;
+        color: #ffffff !important;
+      }
+    }
+  
+    .stg-row {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  
+    .stg-col-6 {
+      flex: 1;
+    }
+  
+    .bringer-parallax-media img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  
+    .content-card {
+      background-color: transparent;
+      padding: 20px;
+      color: #ffffff !important;
+      font-size: 18px;
+      line-height: 1.6;
+      
+      p {
+        margin-bottom: 20px;
+      }
+      
+      .features {
+        list-style: none;
+        padding: 0;
+        
+        li {
+          font-size: 18px;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          color: #ffffff !important;
+          
+          &::before {
+            content: "✔";
+            margin-right: 10px;
+            color: #00ccff; // Blue checkmark color
+            font-size: 20px;
+          }
+          
+          .highlight {
+            color: #0099ff !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  
+
+
 /* === Bento Grid Block === */
 .bringer-bento-grid {
     display: grid;
