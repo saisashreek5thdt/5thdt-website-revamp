@@ -6235,7 +6235,6 @@ a.bringer-arrow-link {
 .bringer-portfolio-card {
   padding: var(--stg-small-gap);
   border-radius: var(--bringer-default-br);
-  height: 400px;
 }
 
 .bringer-portfolio-card-image {
