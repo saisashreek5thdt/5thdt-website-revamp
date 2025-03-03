@@ -5,7 +5,7 @@
   "scripts": {
     "watch:sass1": "sass sass/mainDark.scss assets/content/css/dark.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "npm-run-all --parallel devserver watch:sass1  watch:sass2 watch:sass3",
     "compile:sass1": "sass sass/mainDark.scss assets/content/css/dark.comp.css",
     "prefix:css1": "postcss --use autoprefixer -b 'last 10 versions' assets/content/css/dark.comp.css -o assets/content/css/dark.prefix.css",
     "compress:css1": "sass sass/mainDark.scss assets/content/css/dark.min.css --style compressed",
