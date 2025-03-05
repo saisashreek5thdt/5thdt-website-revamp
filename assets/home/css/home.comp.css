@@ -52112,6 +52112,7 @@ footer.home6-footer .footer-btm .terms-condition p a:hover {
   left: 0;
   z-index: 2;
   transition: opacity 0.75s;
+  margin-bottom: 8rem;
 }
 
 .interactive-banner-section .interactive-banner-img-group .single-banner-bg.active {
