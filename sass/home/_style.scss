@@ -104,7 +104,8 @@ Version: 1.0
 :root {
   --font-fahkwang: "Fahkwang", sans-serif;
   --font-unbounded: "Unbounded", sans-serif;
-  --primary-color: #EC6219;
+  --primary-color: #FFB22C;
+  --primary-color5: #EC6219;
   --primary-color2: #F4CB0A;
   --primary-color3: #1A1A1A;
   --primary-color4: #78EB54;
@@ -18117,6 +18118,7 @@ footer.home6-footer .footer-btm .terms-condition p a:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
 .interactive-banner-section .social-icon.two {
   right: 3%;
   left: unset;
