@@ -23,7 +23,7 @@
   /* Used as a color for general content */
   --bringer-s-text: #C5C7CE;
   /* A background color for accents, like buttons, highlighted blocks, etc. */
-  --bringer-s-accent: #3F6EE9;
+  --bringer-s-accent: #FFB22C;
   /* A hovered button background color */
   --bringer-button-hover-bg: #3F6EE9D0;
   /* Used as a color for text accents */
@@ -6264,7 +6264,7 @@ a.bringer-arrow-link {
   justify-content: space-between;
   align-items: center;
   padding: var(--stg-small-gap) 0 9px 0;
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .bringer-portfolio-card-title {
