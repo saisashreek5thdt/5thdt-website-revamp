@@ -7941,11 +7941,11 @@ button.pswp__button.bringer-pswp-next::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #1e1e1e;
+  background-color: white;
   padding: 50px;
 }
 .cta-section .cta-content {
-  color: white;
+  color: black;
   width: 50%;
 }
 .cta-section .cta-content h2 {
@@ -7959,7 +7959,7 @@ button.pswp__button.bringer-pswp-next::after {
 .cta-section .cta-content .cta-indicator {
   width: 30px;
   height: 30px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50%;
   margin-top: 20px;
 }
