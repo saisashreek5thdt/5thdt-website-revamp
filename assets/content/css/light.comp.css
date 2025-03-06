@@ -7937,6 +7937,46 @@ button.pswp__button.bringer-pswp-next::after {
   border-radius: var(--bringer-default-br);
 }
 
+.cta-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  padding: 50px;
+}
+.cta-section .cta-content {
+  color: white;
+  width: 50%;
+}
+.cta-section .cta-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.cta-section .cta-content p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.cta-section .cta-content .cta-indicator {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.cta-section .cta-images {
+  width: 50%;
+}
+.cta-section .cta-images .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.cta-section .cta-images .grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /** ================
     11. HOVER STATES
     ================ */
