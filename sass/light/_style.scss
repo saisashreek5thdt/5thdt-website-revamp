@@ -3880,7 +3880,61 @@ button.pswp__button.bringer-pswp-next::after {
     width: 100%;
     height: auto;
     border-radius: var(--bringer-default-br);
+
 }
+
+
+
+// new section
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding: 50px;
+    
+    .cta-content {
+        color: black;
+        width: 50%;
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .cta-indicator {
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    }
+
+    .cta-images {
+        width: 50%;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
 
 /** ================
     11. HOVER STATES
