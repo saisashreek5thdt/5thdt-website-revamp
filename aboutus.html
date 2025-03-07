@@ -34,92 +34,17 @@
       id="theme-style"
       type="text/css"
       rel="stylesheet"
-      href="css/light.min.css"
+      href="css/dark.min.css"
     />
     <!-- Light CSS End -->
 
     <!-- Favicon -->
     <link rel="icon" href="img/favicon.png" sizes="32x32" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header
-      id="bringer-header"
-      class="is-frosted is-sticky"
-      data-appear="fade-down"
-      data-unload="fade-up"
-    >
-      <!-- Desktop Header -->
-      <div class="bringer-header-inner">
-        <!-- Header Logo -->
-        <div class="bringer-header-lp">
-          <a href="./" class="bringer-logo">
-            <img src="img/logo.png" alt="bringer." width="88" height="24" />
-          </a>
-        </div>
-        <!-- Main Menu -->
-        <div class="bringer-header-mp">
-          <nav class="bringer-nav">
-            <ul
-              class="main-menu"
-              data-stagger-appear="fade-down"
-              data-stagger-delay="75"
-            >
-              <li class="current-menu-parent">
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="#">Domainology</a>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="education.html">Education</a>
-                  </li>
-                  <li>
-                    <a href="#">Arts</a>
-                  </li>
-                  <li>
-                    <a href="uiux.html">UI/UX</a>
-                  </li>
-                  <li>
-                    <a href="apps.html">Apps</a>
-                  </li>
-                  <li>
-                    <a href="animation.html">Animation</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#footer">Say Hello</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- Header Button -->
-        <!-- <div class="bringer-header-rp" id="theme-toggle">
-          <a href="index.html" class="bringer-button">Get a FREE Quote</a>
-        </div> -->
-        <!-- <div class="bringer-header-rp" id="theme-toggle">
-          <div class="bringer-button">Theme Toggle</div>
-        </div> -->
-        <button id="theme-toggle">Switch Theme</button>
-      </div>
-      <!-- Mobile Header -->
-      <div class="bringer-mobile-header-inner">
-        <a href="./" class="bringer-logo">
-          <img src="img/logo.png" alt="bringer." width="88" height="24" />
-        </a>
-        <a href="#" class="bringer-mobile-menu-toggler">
-          <i class="bringer-menu-toggler-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </i>
-        </a>
-      </div>
-    </header>
+    <div id="header-container"></div>
 
     <!-- Page Main -->
     <main id="bringer-main">
@@ -396,124 +321,7 @@
       
     </main>
     <!-- Footer -->
-    <footer id="bringer-footer" data-appear="fade-up" data-unload="fade-down">
-        <!-- Footer Widgets Area -->
-        <div class="bringer-footer-widgets" id="footer">
-          <div class="stg-container">
-            <div
-              class="stg-row"
-              data-stagger-appear="fade-left"
-              data-stagger-delay="100"
-            >
-              <div class="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
-                <div class="bringer-info-widget">
-                  <a href="./" class="bringer-logo footer-logo">
-                    <img
-                      src="img/logo.png"
-                      alt="bringer."
-                      width="88"
-                      height="24"
-                    />
-                  </a>
-                  <div class="bringer-info-description">
-                    We are a passionate team of developers and designers who
-                    believe in the power of creativity. We help creative people
-                    create a strong online presence that shows their work and
-                    tells a story.
-                  </div>
-                  <span class="bringer-label">Follow us:</span>
-                  <ul
-                    class="bringer-socials-list"
-                    data-stagger-appear="fade-up"
-                    data-stagger-delay="75"
-                  >
-                    <li>
-                      <a
-                        href="https://www.youtube.com/@theBlueBees"
-                        target="_blank"
-                        class="bringer-socials-youtube"
-                      >
-                        <i></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/5thdt/"
-                        target="_blank"
-                        class="bringer-socials-instagram"
-                      >
-                        <i></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://x.com/5thdt"
-                        target="_blank"
-                        class="bringer-socials-x"
-                      >
-                        <i></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/company/fifthdt"
-                        target="_blank"
-                        class="bringer-socials-linkedin"
-                      >
-                        <i></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="stg-col-2 stg-offset-1 stg-tp-col-4 stg-m-col-4">
-                <div class="bringer-widget">
-                  <h6>Domainology</h6>
-                  <div class="bringer-menu-widget">
-                    <ul>
-                      <li><a href="./education.html">Education</a></li>
-                      <li><a href="#">Arts</a></li>
-                      <li><a href="./uiux.html">UI/UX</a></li>
-                      <li><a href="./apps.html">Apps</a></li>
-                      <li>
-                        <a href="#">Animation</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- .bringer-widget -->
-              </div>
-              <div class="stg-col-2 stg-tp-col-4 stg-m-col-4">
-                <div class="bringer-widget">
-                  <h6>Widgets</h6>
-                  <div class="bringer-menu-widget">
-                    <ul>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Domains</a></li>
-                      <li><a href="#">Our Works</a></li>
-                      <li><a href="#">Projects</a></li>
-                      <li><a href="#">Clients</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- .bringer-widget -->
-              </div>
-            </div>
-            <!-- .stg-row -->
-          </div>
-          <!-- .stg-container -->
-        </div>
-        <!-- .bringer-footer-widgets -->
-
-        <!-- Footer Copyright Line -->
-        <div class="bringer-footer-line stg-container">
-          <div class="align-center">
-            Copyright &copy; <span id="currentYear"></span>. All Rights
-            Reserved.
-          </div>
-        </div>
-        <!-- bringer-footer-line -->
-      </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- Right Click Protection Block -->
     <div class="bringer-rcp-wrap">
@@ -533,8 +341,10 @@
     <script src="js/st-core.js"></script>
     <script src="js/classes.js"></script>
     <script src="js/main.js"></script> -->
-    <script src="assets/content/js/5thdt.min.js"></script>
+    <!-- <script src="assets/content/js/5thdt.min.js"></script>
     <script src="js/currentYear.js"></script>
-    <script src="js/themeSwitcher.js"></script>
+    <script src="js/themeSwitcher.js"></script> -->
+    <script src="js/education.js"></script>
+    <script src="js/footer_edu.js"></script>
   </body>
 </html>
