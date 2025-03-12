@@ -1,4 +1,4 @@
-fetch("about.html") // Index.html ko fetch karo
+fetch("home.html") // Index.html ko fetch karo
         .then(response => response.text()) // Response ko text me convert karo
         .then(data => {
             let parser = new DOMParser();

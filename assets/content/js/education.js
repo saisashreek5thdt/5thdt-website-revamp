@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // ✅ Prevent duplicate headers by removing an existing one before loading
-    $("#header-container").empty().load("about.html #bringer-header", function() {
+    $("#header-container").empty().load("home.html #bringer-header", function() {
         console.log("Header loaded!");
         // ✅ Load necessary scripts **only once**
         if (typeof bringer_config === "undefined") {

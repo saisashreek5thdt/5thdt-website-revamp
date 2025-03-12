@@ -3,37 +3,37 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch:sass1": "sass sass/mainDark.scss assets/content/css/dark.css -w",
+    "watch:scss1": "sass sass/main.scss assets/content/css/main.css -w",
+    "compile:scss1": "sass sass/main.scss assets/content/css/main.comp.css",
+    "prefix:scss1": "postcss --use autoprefixer -b 'last 10 versions' assets/content/css/main.comp.css -o assets/content/css/main.prefix.css",
+    "compress:scss1": "sass sass/main.scss assets/content/css/main.min.css --style compressed",
+    "watch:scss2": "sass sass/home.scss assets/home/css/home.css -w",
+    "compile:scss2": "sass sass/home.scss assets/home/css/home.comp.css",
+    "prefix:scss2": "postcss --use autoprefixer -b 'last 10 versions' assets/home/css/home.comp.css -o assets/home/css/home.prefix.css",
+    "compress:scss2": "sass sass/home.scss assets/home/css/home.min.css --style compressed",
+    "build:css": "npm-run-all compile:scss1 prefix:scss1 compress:scss1 compile:scss2 prefix:scss2 compress:scss2",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass1  watch:sass2 watch:sass3",
-    "compile:sass1": "sass sass/mainDark.scss assets/content/css/dark.comp.css",
-    "prefix:css1": "postcss --use autoprefixer -b 'last 10 versions' assets/content/css/dark.comp.css -o assets/content/css/dark.prefix.css",
-    "compress:css1": "sass sass/mainDark.scss assets/content/css/dark.min.css --style compressed",
-    "watch:sass2": "sass sass/mainLight.scss assets/content/css/light.css -w",
-    "compile:sass2": "sass sass/mainLight.scss assets/content/css/light.comp.css",
-    "prefix:css2": "postcss --use autoprefixer -b 'last 10 versions' assets/content/css/light.comp.css -o assets/content/css/light.prefix.css",
-    "compress:css2": "sass sass/mainLight.scss assets/content/css/light.min.css --style compressed",
-    "watch:sass3": "sass sass/home.scss assets/home/css/home.css -w",
-    "compile:sass3": "sass sass/home.scss assets/home/css/home.comp.css",
-    "prefix:css3": "postcss --use autoprefixer -b 'last 10 versions' assets/home/css/home.comp.css -o assets/home/css/home.prefix.css",
-    "compress:css3": "sass sass/home.scss assets/home/css/home.min.css --style compressed",
-    "build:css": "npm-run-all compile:sass1 prefix:css1 compress:css1 compile:sass2 prefix:css2 compress:css2 compile:sass3 prefix:css3 compress:css3",
-    "comp:js1": "uglifyjs js/lib/jquery.min.js js/lib/libs.js js/contact_form.js js/st-core.js js/classes.js js/main.js js/currentYear.js js/themeSwitcher.js -o assets/content/js/5thdt.min.js -c -m",
-    "comp:js2": "uglifyjs js/home/jquery-3.7.1.min.js js/home/popper.min.js js/home/bootstrap.min.js js/home/swiper-bundle.min.js js/home/slick.min.js js/home/waypoints.min.js js/home/jquery.counterup.min.js js/home/jquery.nice-select.min.js js/home/jquery.fancybox.min.js js/home/isotope.pkgd.min.js js/home/imagesloaded.pkgd.min.js js/home/gsap.min.js js/home/ScrollTrigger.min.js js/home/SmoothScroll.js js/home/simpleParallax.min.js js/home/TweenMax.min.js js/home/SplitText.min.js js/home/jquery.marquee.min.js js/home/main.js -o assets/home/js/5thdtHome.min.js -c -m"
+    "start": "npm-run-all --parallel devserver watch:scss1  watch:scss2",
+    "comp:js1": "uglifyjs assets/content/js/lib/jquery.min.js assets/content/js/lib/libs.js assets/content/js/contact_form.js assets/content/js/st-core.js assets/content/js/classes.js assets/content/js/main.js assets/content/js/currentYear.js -o assets/content/js/5thdt.min.js -c -m",
+    "comp:js2": "uglifyjs assets/home/js/jquery-3.7.1.min.js assets/home/js/popper.min.js assets/home/js/bootstrap.min.js assets/home/js/swiper-bundle.min.js assets/home/js/slick.min.js assets/home/js/waypoints.min.js assets/home/js/jquery.counterup.min.js assets/home/js/jquery.nice-select.min.js assets/home/js/jquery.fancybox.min.js assets/home/js/isotope.pkgd.min.js assets/home/js/imagesloaded.pkgd.min.js assets/home/js/gsap.min.js assets/home/js/ScrollTrigger.min.js assets/home/js/SmoothScroll.js assets/home/js/simpleParallax.min.js assets/home/js/TweenMax.min.js assets/home/js/SplitText.min.js assets/home/js/jquery.marquee.min.js assets/home/js/main.js -o assets/home/js/5thdtHome.min.js -c -m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saisashreek5thdt/5thdt-website-revamp.git"
   },
   "keywords": [],
-  "author": "5TH Dimension Technologies",
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saisashreek5thdt/5thdt-website-revamp/issues"
+  },
+  "homepage": "https://github.com/saisashreek5thdt/5thdt-website-revamp#readme",
   "description": "",
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.0",
     "sass": "^1.85.1",
-    "sass-loader": "^16.0.5",
     "uglify-js": "^3.19.3"
-  },
-  "dependencies": {
-    "5thdt__website": "file:"
   }
 }
